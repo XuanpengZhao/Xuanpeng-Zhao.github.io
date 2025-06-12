@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Personal Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eac9);
+      min-height: 100vh;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: rgba(255,255,255,0.95);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #7f7fd5;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    }
+    h1 {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      color: #4a69bd;
+    }
+    h2 {
+      color: #222f3e;
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      margin-top: 32px;
+    }
+    p {
+      color: #444;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 0 12px;
+      padding: 10px 22px;
+      background: #4a69bd;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .links a:hover {
+      background: #222f3e;
+    }
+    .projects {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    .projects li {
+      margin-bottom: 10px;
+      font-size: 1.07em;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 5vw;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Homepage</h1>
-  <p>Hello! This is my personal site hosted on GitHub Pages.</p>
+  <div class="container">
+    <img src="https://i.pravatar.cc/120?img=3" alt="Your Name" class="avatar">
+    <h1>Your Name</h1>
+    <p>Hello! I’m a <b>[Your Profession]</b> based in Riverside, CA.<br>
+      Welcome to my personal homepage.
+    </p>
+    <div class="links">
+      <a href="mailto:you@email.com">Email</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+    <h2>About Me</h2>
+    <p>
+      [Write a short bio about yourself, your interests, or your goals. For example: <br>
+      "I'm passionate about web development, design, and technology. I love building creative solutions and collaborating with others."]
+    </p>
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li>
+        <a href="https://github.com/yourusername/project1" target="_blank">Project One</a>
+        – Short description of your project.
+      </li>
+      <li>
+        <a href="https://github.com/yourusername/project2" target="_blank">Project Two</a>
+        – Short description of your project.
+      </li>
+      <!-- Add more projects as needed -->
+    </ul>
+  </div>
 </body>
 </html>
