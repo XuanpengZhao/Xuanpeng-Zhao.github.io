@@ -1,117 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Personal Homepage</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(135deg, #7f7fd5, #86a8e7, #91eac9);
-      min-height: 100vh;
-      color: #222;
-    }
-    .container {
-      max-width: 700px;
-      margin: 60px auto;
-      background: rgba(255,255,255,0.95);
-      border-radius: 18px;
-      box-shadow: 0 8px 32px rgba(44,62,80,0.15);
-      padding: 40px 30px;
-      text-align: center;
-    }
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #7f7fd5;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 12px rgba(44,62,80,0.07);
-    }
-    h1 {
-      margin-top: 0;
-      font-weight: 700;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-      color: #4a69bd;
-    }
-    h2 {
-      color: #222f3e;
-      font-size: 1.3em;
-      margin-bottom: 10px;
-      margin-top: 32px;
-    }
-    p {
-      color: #444;
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin-bottom: 18px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0 12px;
-      padding: 10px 22px;
-      background: #4a69bd;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.2s;
-    }
-    .links a:hover {
-      background: #222f3e;
-    }
-    .projects {
-      text-align: left;
-      margin: 0 auto;
-      max-width: 500px;
-    }
-    .projects li {
-      margin-bottom: 10px;
-      font-size: 1.07em;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px 5vw;
-      }
-      h1 {
-        font-size: 2em;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuanpeng Zhao - Ph.D. Candidate in Electrical Engineering at UC Riverside</title>
+    <meta name="description" content="Personal academic homepage of Xuanpeng Zhao - Specializing in Autonomous Vehicle Security and AI Transportation Systems">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.pravatar.cc/120?img=3" alt="Your Name" class="avatar">
-    <h1>Your Name</h1>
-    <p>Hello! I’m a <b>[Your Profession]</b> based in Riverside, CA.<br>
-      Welcome to my personal homepage.
-    </p>
-    <div class="links">
-      <a href="mailto:you@email.com">Email</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#homepage" class="nav-logo">XZ</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#publications" class="nav-link">PUBLICATIONS</a></li>
+                <li><a href="#awards" class="nav-link">AWARDS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/xuanpeng-zhao-531300180/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/XuanpengZhao" target="_blank" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=Dbki5QQAAAAJ&hl=en" target="_blank" class="social-icon" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background -->
+    <div class="hero-section" id="homepage">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <!-- Header Information -->
+            <header class="header">
+                <div class="header-main">
+                    <img src="assets/images/headshot.jpg" alt="Dr. Xuanpeng Zhao" class="profile-image">
+                    <div class="header-content">
+                        <h1 class="name">Xuanpeng Zhao</h1>
+                        <p class="title">Ph.D. Candidate in Electrical Engineering</p>
+                        <p class="institution">
+                            <a href="https://www.cert.ucr.edu/transportation-systems/" target="_blank">Transportation Systems Research (TSR) Group, CE-CERT</a><br>
+                            University of California, Riverside
+                        </p>
+                        <p class="advisor">Advisor: 
+                            <a href="https://profiles.ucr.edu/app/home/profile/barth" target="_blank">Prof. Matthew Barth</a> & 
+                            <a href="https://profiles.ucr.edu/app/home/profile/guoyuanw" target="_blank">Prof. Guoyuan Wu</a>
+                        </p>
+                    </div>
+                </div>
+                <p class="summary">
+                    Specializing in machine learning, simulation, hardware-in-the-Loop, sensor fusion, and perception systems to advance connected and autonomous vehicle technologies and intelligent transportation systems. Currently leading EcoCAR EV Challenge CAV team integration for saftey, real-time automotive solutions in modern mobility applications.
+                </p>
+            </header>
+        </div>
     </div>
-    <h2>About Me</h2>
-    <p>
-      [Write a short bio about yourself, your interests, or your goals. For example: <br>
-      "I'm passionate about web development, design, and technology. I love building creative solutions and collaborating with others."]
-    </p>
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li>
-        <a href="https://github.com/yourusername/project1" target="_blank">Project One</a>
-        – Short description of your project.
-      </li>
-      <li>
-        <a href="https://github.com/yourusername/project2" target="_blank">Project Two</a>
-        – Short description of your project.
-      </li>
-      <!-- Add more projects as needed -->
-    </ul>
-  </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- About Section -->
+            <section class="section" id="about">
+                <a href="#about" class="section-title">About Me</a>
+                <p>I'm a PhD student in Electrical Engineering at UC Riverside, where I work on making cars safer, smarter, and more sustainable through autonomous driving technology. My focus is on developing systems that help vehicles understand their environment and make intelligent decisions, much like teaching a car to think and react like an experienced driver.</p>
+                <p>I spend my time working with machine learning to help cars learn from experience and understand driving behavior, creating sophisticated virtual worlds where we can test autonomous vehicles safely before putting them on real roads. Think of it like building incredibly detailed video games where we can simulate every possible driving scenario. I also develop perception algorithms that help vehicles understand what's happening around them, then use sensor fusion to combine information from multiple sensors like LiDAR, cameras, and GPS to create a complete picture of the driving environment, including predicting what other drivers might do next.</p>
+                <p>Currently, I lead the Connected and Automated Vehicle team for the EcoCAR EV Challenge, where I get to work with real vehicles and see our research come to life. This involves coordinating with team members to integrate all our autonomous driving technologies, starting with Hardware-in-the-Loop testing to validate our algorithms in controlled environments before we test on actual vehicles. We then validate our systems through dynamometer testing and finally move to on-road testing, making sure our self-driving algorithms work reliably in the real world.</p>
+                <p>What I love about this work is taking complex theoretical concepts and turning them into practical solutions that could one day make driving safer and more efficient for everyone. It's about bridging the gap between what's possible in the lab and what actually works when you're driving in real traffic.</p>
+            </section>
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <a href="#skills" class="section-title">Skills</a>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="category-title">Programming Languages</h3>
+                        <div class="skill-cluster" data-cluster="languages">
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="Python">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="MATLAB">
+                                    <img src="assets/icons/matlab.png" alt="MATLAB" class="default-icon">
+                                    <span>MATLAB</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="C#">
+                                    <img src="assets/icons/csharp.png" alt="C#" class="default-icon">
+                                    <span>C#</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="C++">
+                                    <img src="assets/icons/cpp.png" alt="C++" class="default-icon">
+                                    <span>C++</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Java">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="html">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="CSS">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Software & Tools</h3>
+                        <div class="skill-cluster" data-cluster="software">
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="Git">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="SUMO">
+                                    <img src="assets/icons/sumo.png" alt="SUMO" class="default-icon">
+                                    <span>SUMO</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="CARLA">
+                                    <img src="assets/icons/carla.png" alt="CARLA" class="default-icon">
+                                    <span>CARLA</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="Unity">
+                                    <img src="assets/icons/unity.png" alt="Unity" class="default-icon">
+                                    <span>Unity</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Simulink">
+                                    <img src="assets/icons/simulink.png" alt="Simulink" class="default-icon">
+                                    <span>Simulink</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="AWS">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Docker">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                
+                                <a href="https://beam.apache.org/" target="_blank" > 
+                                    <div class="skill-bubble" data-skill="BEAM">
+                                        BEAM
+                                        <span>BEAM</span>
+                                    </div>
+                                </a>
+                                <div class="skill-bubble" data-skill="RTMaps">
+                                    <img src="assets/icons/rtmaps.png" alt="RTMaps" class="default-icon">
+                                    <span>RTMaps</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="RoadRunner">
+                                    <img src="assets/icons/roadrunner.png" alt="RoadRunner" class="default-icon">
+                                    <span>RoadRunner</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Libraries & Frameworks</h3>
+                        <div class="skill-cluster" data-cluster="frameworks">
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="PyTorch">
+                                    <img src="assets/icons/pytorch.png" alt="PyTorch" class="default-icon">
+                                    <span>PyTorch</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="TensorFlow">
+                                    <img src="assets/icons/tensorflow.png" alt="TensorFlow" class="default-icon">
+                                    <span>TensorFlow</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="MMDetection3D">
+                                    <img src="assets/icons/mmdet3d.png" alt="MMDetection3D" class="default-icon">
+                                    <span>MMDetection3D</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="CUDA">
+                                    <img src="assets/icons/cuda.png" alt="CUDA" class="default-icon">
+                                    <span>CUDA</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Open3D">
+                                    <img src="assets/icons/open3d.png" alt="Open3D" class="default-icon">
+                                    <span>Open3D</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="TraCI">
+                                    <img src="assets/icons/sumo.png" alt="TraCI" class="default-icon">
+                                    <span>TraCI</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="ROS">
+                                    <img src="assets/icons/ros.png" alt="ROS" class="default-icon">
+                                    <span>ROS</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="DeepSort">
+                                    <img src="assets/icons/deepsort.png" alt="DeepSort" class="default-icon">
+                                    <span>DeepSort</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="S3fs">
+                                    <img src="assets/icons/s3fs.png" alt="S3fs" class="default-icon">
+                                    <span>S3fs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Hardware</h3>
+                        <div class="skill-cluster" data-cluster="hardware">
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="OUSTER">
+                                    <img src="assets/icons/ouster.png" alt="OUSTER LiDAR" class="default-icon">
+                                    <span>LiDAR</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="U-Blox">
+                                    <img src="assets/icons/U-blox.svg" alt="U-Blox" class="default-icon">
+                                    <span>U-Blox</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="AUTERA">
+                                    <img src="assets/icons/dspace.svg" alt="AUTERA" class="default-icon">
+                                    <span>AUTERA</span>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <div class="skill-bubble" data-skill="NAVQplus">
+                                    <img src="assets/icons/navqplus.png" alt="NAVQplus" class="default-icon">
+                                    <span>NAVQplus</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Speedgoat">
+                                    <img src="assets/icons/speedgoat.png" alt="Speedgoat" class="default-icon">
+                                    <span>Speedgoat</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="MK6">
+                                    <img src="assets/icons/cohda.png" alt="MK6" class="default-icon">
+                                    <span>MK6</span>
+                                </div>
+                                <div class="skill-bubble" data-skill="Raspberry Pi">
+                                    <i class="fab fa-raspberry-pi"></i>
+                                    <span>Raspberry Pi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <a href="#projects" class="section-title">Projects</a>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>EcoCAR EV Challenge Competition</h3>
+                            <span class="status-label status-ongoing">Ongoing</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/ecocar.jpg" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>The EcoCAR EV Challenge is a multi-year collegiate automotive engineering competition that brings together student teams from leading North American universities to re-engineer the 2023 Cadillac LYRIQ platform, integrating advanced battery electric propulsion systems, Connected and Automated Vehicle (CAV) technologies, and intelligent energy management solutions. Through hands-on experience with industry-standard hardware platforms including dSPACE AUTERA for real-time autonomous control development, Speedgoat systems for motor control and hardware-in-the-loop validation, and Cohda Wireless MK6 units for V2X communication, teams develop comprehensive autonomous driving capabilities while conducting rigorous testing across both controlled simulation environments and real-world driving scenarios. This collaborative initiative, supported by the U.S. Department of Energy and industry partners, aims to cultivate the next generation of automotive engineers through intensive hardware integration, closed-loop dynamometer testing, hardware-in-the-loop validation workflows, and extensive on-road testing campaigns that demonstrate the practical viability of advanced electric vehicle technologies and cooperative driving automation systems.</p>
+                                <a href="https://ecocar.engr.ucr.edu/" class="paper-link" target="_blank">
+                                    <i class="fas fa-globe"></i> For More Info
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Non-Tailpipe Brake Emission Monitoring with Roadside LiDAR</h3>
+                            <span class="status-label status-ongoing">Ongoing</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/EcoCAR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>The escalating concern over non-tailpipe particulate matter emissions from vehicle braking systems presents a critical challenge for transportation sustainability and public health protection. This project addresses the urgent need for comprehensive real-world brake activity measurements through an innovative multi-modal sensing framework that integrates roadside LiDAR technology for high-resolution trajectory detection, supported by drone surveillance and instrumented probe vehicles for model training and validation. The framework employs a hybrid physical-machine learning approach, combining physics-based decomposition of vehicle dynamics with deep learning algorithms to isolate brake-induced deceleration from other forces such as rolling resistance, aerodynamic drag, and road gradient effects. To account for evolving vehicle technologies, the system is designed with distinct models for combustion engine vehicles and electric vehicles, each trained on powertrain-specific datasets to capture unique braking behaviors, including regenerative braking dynamics in EVs. By leveraging LiDAR-derived trajectories and material-specific emission factors calibrated against laboratory dynamometer data, the project aims to establish scalable protocols for monitoring brake wear emissions across diverse traffic conditions. The outcomes will support evidence-based policymaking by generating actionable insights into intersection-level emission hotspots, informing regulatory standards for brake materials, and facilitating the integration of adaptive traffic management strategies with emerging EV technologies to mitigate non-tailpipe pollution. Ongoing efforts focus on refining sensor fusion algorithms, expanding real-world validation across disadvantaged communities, and developing cost-effective deployment strategies for transportation agencies.</p>
+                                <!-- <a href="https://doi.org/10.1109/TIV.2023.3320279" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>KIA NIRO Drive-by-Wire Project Retrofitting</h3>
+                            <span class="status-label status-ongoing">Ongoing</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/EcoCAR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>The growing demand for autonomous vehicle development platforms necessitates cost-effective, accessible solutions that enable researchers and engineers to implement and validate advanced control algorithms on production vehicles without compromising safety or requiring extensive mechanical modifications. This project aims to retrofit a KIA NIRO with comprehensive drive-by-wire capabilities, integrating electronic control systems for throttle, braking, and steering functions while maintaining the vehicle's original safety architecture and enabling seamless integration with autonomous driving software platforms. Through the implementation of electronic control units, sensor interfaces, and actuator systems, the conversion will establish a reliable foundation for autonomous vehicle research, leveraging the NIRO's electric vehicle architecture to create a fully controllable platform suitable for algorithm development, real-world testing, and validation of connected and automated vehicle technologies. The project will utilize either custom STM32-based signal interception systems or commercial solutions like PolySync DriveKit to ensure compatibility with industry-standard development tools while maintaining the flexibility to integrate specialized hardware and software components for autonomous vehicle research applications. By converting the KIA NIRO to full drive-by-wire operation, this initiative will provide a robust, cost-effective autonomous vehicle development platform that supports comprehensive testing of perception, planning, and control algorithms while enabling safe human oversight and emergency intervention capabilities.</p>
+                                <!-- <a href="https://doi.org/10.1109/TIV.2023.3320279" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Infrastructure-Based Freight Signal Priority</h3>
+                            <span class="status-label status-ongoing">Ongoing</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/EcoCAR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>The escalating concern over freight movement efficiency and environmental impacts in urban environments necessitates innovative solutions that can optimize traffic signal operations while considering the unique operational characteristics of commercial vehicles. This infrastructure-based Freight Signal Priority project addresses the critical need for comprehensive real-world freight movement optimization through an advanced roadside sensing framework that integrates LiDAR technology for high-resolution vehicle detection, classification, and state estimation without requiring any onboard equipment modifications to freight vehicles. The framework will employ sophisticated point cloud processing algorithms and machine learning techniques to distinguish freight vehicles from other traffic participants, predict arrival times with high accuracy, and generate priority requests that consider factors such as vehicle weight, emission profiles, and delivery urgency while maintaining balance with general traffic flow. Through the implementation of strategically positioned roadside LiDAR sensors and standardized communication protocols including NTCIP 1202 and NTCIP 1211, the system will integrate seamlessly with existing traffic signal controllers to provide real-time signal optimization that balances freight priority with overall urban mobility efficiency. The project aims to demonstrate robust performance against various traffic scenarios while maintaining low computational overhead suitable for real-time deployment, ultimately establishing scalable protocols for monitoring and prioritizing freight movement that can be readily adopted by transportation agencies seeking to improve urban freight efficiency while maintaining equitable traffic management for all road users.</p>
+                                <!-- <a href="https://doi.org/10.1109/TIV.2023.3320279" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Advanced Autonomous Vehicle Security Framework</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/AVMON.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>The increasing deployment of autonomous vehicles in critical applications introduces new security vulnerabilities, particularly the risk of sensor manipulation attacks that can compromise vehicle safety and operational integrity by exploiting physical interfaces to GPS, IMU, and other critical sensors. This threat poses significant challenges to the widespread adoption of autonomous systems, as traditional cybersecurity approaches prove inadequate against physical-world attacks that can cause vehicles to deviate from intended trajectories or even crash. AVMON addresses these security concerns through a comprehensive framework that combines optimized Extended Kalman Filter parameter tuning specific to vehicle dynamics and operational environments, residual learning using neural networks to compensate for nonlinear effects and unmodeled disturbances, and advanced change detection algorithms to reduce false positives while maintaining real-time performance. The system demonstrates substantial improvements in attack detection accuracy, achieving detection rates of 98-100% compared to existing defenses while maintaining low computational overhead suitable for deployment on resource-constrained embedded platforms. Through extensive validation using both simulation environments and hardware testbeds for ground and aerial vehicles, AVMON proves its effectiveness against sophisticated attack scenarios including GPS spoofing, IMU manipulation, and adaptive attacks designed to evade detection, with the potential for technology transfer to enhance security across diverse autonomous vehicle applications.</p>
+                                <a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-450/" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Advanced Traffic Monitoring using Roadside LiDAR</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/AVSIM.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Developed a comprehensive simulation framework for autonomous vehicle testing...</p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10120632" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Driver Intention Prediction for Cooperative Highway Ramp Merging</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Driver Intention Prediction for Cooperative Highway Ramp Merging...</p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10082926" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Game-Theoretic Control Based Highway Ramp Merging</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Game-Theoretic Control Based Highway Ramp Merging...</p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9646262" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Vehicle-to-Cloud ADAS for Cooperative Highway Ramp Merging</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Vehicle-to-Cloud ADAS for Cooperative Highway Ramp Merging...</p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9502522" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Traffic-Induced Environmental and Health Impact Simulation Platform</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Integrated Simulation Platform for Quantifying the Traffic-Induced Environmental and Health Impacts...</p>
+                                <a href="https://ieeexplore.ieee.org/document/10485596" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Co-simulation Platform for CAV and Human Behavior Analysis</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Co-simulation platform for modeling and evaluating connected and automated vehicles and human behavior in mixed traffic...</p>
+                                <a href="https://www.researchgate.net/publication/360394550_Co-Simulation_Platform_for_Modeling_and_Evaluating_Connected_and_Automated_Vehicles_and_Human_Behavior_in_Mixed_Traffic" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject(this)">
+                            <h3>Cybersecurity Assessment of Cooperative Ramp Merging Systems</h3>
+                            <span class="status-label status-completed">Completed</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-image">
+                                <img src="assets/images/SENSOR.png" alt="Project Image" class="project-img" style="width: 1100px;">
+                            </div>
+                            <div class="project-content">
+                                <p>Evaluating cybersecurity risks of cooperative ramp merging in mixed traffic environments...</p>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9749775" class="paper-link" target="_blank">
+                                    <i class="fas fa-file-alt"></i> Read the Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <section class="section" id="publications">
+                <a href="#publications" class="section-title">Publications</a>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <h3>Journal Articles</h3>
+                        <ul>
+                            <li>
+                                Liao, X., Wang, Z., <strong>Zhao, X.</strong>, Han, K., Tiwari, P., Barth, M. J., & Wu, G. (2021). "Cooperative ramp merging design and field implementation: A digital twin approach based on vehicle-to-cloud communication." <em>IEEE Transactions on Intelligent Transportation Systems</em>, 23(5), 4490-4500.
+                            </li>
+                            <li>
+                                Liao, X., <strong>Zhao, X.</strong>, Wang, Z., Han, K., Tiwari, P., Barth, M. J., & Wu, G. (2021). "Game theory-based ramp merging for mixed traffic with unity-sumo co-simulation." <em>IEEE Transactions on Systems, Man, and Cybernetics: Systems</em>, 52(9), 5746-5757.
+                            </li>
+                            <li>
+                                Liao, X., <strong>Zhao, X.</strong>, Wang, Z., Zhao, Z., Han, K., Gupta, R., Barth, M. J., & Wu, G. (2023). "Driver digital twin for online prediction of personalized lane-change behavior." <em>IEEE Internet of Things Journal</em>, 10(15), 13235-13246.
+                            </li>
+                            <li>
+                                <strong>Zhao, X.</strong>, Liao, X., Wang, Z., Wu, G., Barth, M., Han, K., & Tiwari, P. (2022). "Co-simulation platform for modeling and evaluating connected and automated vehicles and human behavior in mixed traffic." <em>SAE International Journal of Connected and Automated Vehicles</em>, 5(12-05-04).
+                            </li>
+                            <li>
+                                Bai, Z., Nayak, S. P., <strong>Zhao, X.</strong>, Wu, G., Barth, M. J., Qi, X., Liu, Y., Sisbot, E. A., et al. (2023). "Cyber mobility mirror: A deep learning-based real-world object perception platform using roadside LiDAR." <em>IEEE Transactions on Intelligent Transportation Systems</em>, 24(9), 9476-9489.
+                            </li>
+                            <li>
+                                Abdo, A., Chen, H., <strong>Zhao, X.</strong>, Wu, G., & Feng, Y. (2023). "Cybersecurity on connected and automated transportation systems: A survey." <em>IEEE Transactions on Intelligent Vehicles</em>, 9(1), 1382-1401.
+                            </li>
+                            <li>
+                                <strong>Zhao, X.</strong>, Abdo, A., Liao, X., Barth, M. J., & Wu, G. (2022). "Evaluating cybersecurity risks of cooperative ramp merging in mixed traffic environments." <em>IEEE Intelligent Transportation Systems Magazine</em>, 14(6), 52-65.
+                            </li>
+                            <li>
+                                Ciuffo, B., Makridis, M., Padovan, V., Benenati, E., Boriboonsomsin, K., <strong>Zhao, X.</strong>, et al. (2023). "Robotic competitions to design future transport systems: The case of jrc autotrac 2020." <em>Transportation Research Record</em>, 2677(2), 1165-1178.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="publication-item">
+                        <h3>Conference Proceedings</h3>
+                        <ul>
+                            <li>
+                                Wang, Z., Liao, X., <strong>Zhao, X.</strong>, Han, K., Tiwari, P., Barth, M. J., & Wu, G. (2020). "A digital twin paradigm: Vehicle-to-cloud based advanced driver assistance systems." In <em>Proceedings of the 2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring)</em>, 1-6.
+                            </li>
+                            <li>
+                                Liao, X., Wang, Z., <strong>Zhao, X.</strong>, Zhao, Z., Han, K., Tiwari, P., Barth, M. J., & Wu, G. (2022). "Online prediction of lane change with a hierarchical learning-based approach." In <em>Proceedings of the 2022 International Conference on Robotics and Automation (ICRA)</em>, 948-954.
+                            </li>
+                            <li>
+                                <strong>Zhao, X.</strong>, Wu, G., Venkatram, A., Luo, J., Hao, P., Boriboonsomsin, K., & Hu, S. (2024). "Integrated Simulation Platform for Quantifying the Traffic-Induced Environmental and Health Impacts." In <em>Proceedings of the 2024 Forum for Innovative Sustainable Transportation Systems (FISTS)</em>, 1-8.
+                            </li>
+                            <li>
+                                <strong>Zhao, X.</strong>, Liao, X., Wu, G., Boriboonsomsin, K., & Barth, M. (2023). "Improving Truck Merging at Ramps in a Mixed Traffic Environment: A Multi-human-in-the-loop (MHuiL) Approach." In <em>Proceedings of the 2023 IEEE 26th International Conference on Intelligent Transportation Systems</em>, 1-6.
+                            </li>
+                            <li>
+                                Abdo, A., Malek, S. M. B., <strong>Zhao, X.</strong>, & Abu-Ghazaleh, N. (2024). "AVMON: Securing Autonomous Vehicles by Learning Control Invariants and Residual Prediction." In <em>Proceedings of VehicleSec</em>, 1-6.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awards Section -->
+            <section class="section" id="awards">
+                <a href="#awards" class="section-title">Awards & Honors</a>
+                <div class="awards-list">
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>National Center for Sustainable Transportation (NCST) Graduate Dissertation Award</h3>
+                            <p class="award-date">2024–2025</p>
+                            <p>$20,000 dissertation support for outstanding graduate research in sustainable transportation.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>ZOOX AutoDriving Security Award</h3>
+                            <p class="award-date">2024</p>
+                            <p>Recognition for outstanding contributions in vehicle security and privacy research at the Second ISOC VehicleSec Symposium.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>Transportation Systems Research (TSR) Graduate Student Award</h3>
+                            <p class="award-date">2024</p>
+                            <p>Award from CE-CERT to assist graduate student academic and research expenses at UC Riverside.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>Esther F. Hays Graduate Fellowship Award</h3>
+                            <p class="award-date">2023</p>
+                            <p>fellowship from CE-CERT to assist graduate students with academic and research expenses at UC Riverside.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>International AUTOnomous vehicle TRAffic Challenge (AUTOTRAC) - Second Place</h3>
+                            <p class="award-date">2021</p>
+                            <p>Second place recognition in European Commission-funded international competition for cooperative automated vehicle research.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>UC Riverside Graduate Fellowship Award</h3>
+                            <p class="award-date">2020</p>
+                            <p>Full fellowship award from UCR Graduate Division to support continued graduate work and research excellence.</p>
+                        </div>
+                    </div>
+                    <div class="award-item">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h3>SAE International Journal of Connected and Automated Vehicles Best Paper Award</h3>
+                            <p class="award-date">2019</p>
+                            <p>Best Paper Award for "Cooperative Ramp Merging System: Agent-Based Modeling and Simulation Using Game Engine".</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <a href="#contact" class="section-title">Contact</a>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="mailto:xzhao094@ucr.edu" class="button">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://github.com/XuanpengZhao" class="button" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/xuanpeng-zhao-531300180/" class="button" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Xuanpeng-Zhao?ev=hdr_xprf" class="button" target="_blank">
+                            <i class="fab fa-graduation-cap"></i> Google Scholar
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=Dbki5QQAAAAJ&hl=en" class="button" target="_blank">
+                            <i class="fab fa-researchgate"></i> ResearchGate
+                        </a>
+                        <a href="https://orcid.org/my-orcid?orcid=0000-0001-7073-6927" class="button" target="_blank">
+                            <i class="fab fa-orcid"></i> ORCID
+                        </a>
+                    </div>
+                    <a href="#" class="button">Download CV</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Project card expand/collapse functionality
+        function toggleProject(header) {
+            const card = header.closest('.project-card');
+            const details = card.querySelector('.project-details');
+            
+            // make sure it has correct initial maxHeight
+            if (!details.style.maxHeight) {
+                details.style.maxHeight = '0px';
+            }
+            
+            if (card.classList.contains('expanded')) {
+                card.classList.remove('expanded');
+                details.style.maxHeight = '0px';
+            } else {
+                card.classList.add('expanded');
+                details.style.maxHeight = details.scrollHeight + 'px';
+            }
+        }
+
+        // Initialize project cards
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial maxHeight for expanded cards
+            document.querySelectorAll('.project-card.expanded .project-details').forEach(details => {
+                details.style.maxHeight = details.scrollHeight + "px";
+            });
+        });
+    </script>
 </body>
-</html>
+</html> 
